@@ -14,6 +14,7 @@ format:
 #| label: setup
 #| include: false
 #install.packages("rnaturalearthdata")
+#install.packages("igraph")
 # Load required libraries
 library(tidyverse)
 library(scales)
