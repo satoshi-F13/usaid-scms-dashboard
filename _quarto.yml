@@ -5,8 +5,6 @@ website:
   title: "USAID Supply-Chaine Performance Dashboard"
   sidebar:
     contents:
-      - href: index.qmd
-        text: Home
       - dashboard.qmd
 
 format:
