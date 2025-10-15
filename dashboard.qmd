@@ -13,7 +13,7 @@ format:
 ```{r, loadpackages}
 #| label: setup
 #| include: false
-
+#install.packages("rnaturalearthdata")
 # Load required libraries
 library(tidyverse)
 library(scales)
@@ -34,7 +34,6 @@ library(networkD3)
 library(dplyr)
 library(tidyr)
 library(htmlwidgets)
-library(viridis)
 # Load and clean data
 crm_data <- read_csv("data/crm_data_cleaned.csv")
 
