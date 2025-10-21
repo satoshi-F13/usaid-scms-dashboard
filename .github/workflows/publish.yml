@@ -41,6 +41,11 @@ jobs:
         with:
           cache-version: 1
       
+      - name: Install additional R packages
+        run: |
+          Rscript -e "install.packages('rnaturalearthdata', repos='https://cloud.r-project.org/')"
+          Rscript -e "if (!require('rnaturalearthdata')) stop('rnaturalearthdata not installed')"
+      
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
