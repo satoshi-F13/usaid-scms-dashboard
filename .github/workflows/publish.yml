@@ -20,7 +20,16 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libglpk-dev libxml2-dev libcurl4-openssl-dev libssl-dev
+          sudo apt-get install -y \
+            libglpk-dev \
+            libxml2-dev \
+            libcurl4-openssl-dev \
+            libssl-dev \
+            libgdal-dev \
+            libgeos-dev \
+            libproj-dev \
+            libsqlite3-dev \
+            libudunits2-dev
       
       - name: Install R
         uses: r-lib/actions/setup-r@v2
